@@ -129,7 +129,7 @@ echo "Done!"
 
 # enable with "./ParticleDetect.sh -y monitor" or "./ParticleDetect.sh monitor"
 if [[ "$1" == "monitor" ]] || [[ "$2" == "monitor" ]]; then
-# since your setup file will usually need to display some output, we'll open the serial monitor so you can check it all worked
-sleep 2
-exec particle serial monitor --follow # On Linux this will probably put the device back into DFU mode unintentionally
+  # since your setup file will usually need to display some output, we'll open the serial monitor so you can check it all worked
+  sleep 2
+  exec particle serial monitor --follow # On Linux this will probably put the device back into DFU mode unintentionally
 fi
