@@ -69,7 +69,7 @@ sleep 1
 # Override with ./ParticleDetect.sh -y
 
 if [[ "$1" != "-y" ]] && [[ "$2" != "-y" ]]; then
-read -p "Is the device in Listen Mode (blue blink) (y/n)?: " choice
+read -p "Is the device in Listening Mode (blue blink) (y/n)?: " choice
 case "$choice" in
   y|Y ) echo "yes";;
   n|N ) exit;;
@@ -84,7 +84,7 @@ g=${f:19:24}
 
 if [ ${#g} -lt 15 ]; then
 	# if the deviceID is less than 15 chars, it didn't work so just exit
-	echo "Can't find a valid deviceID. Make sure the device is in Listen Mode (Blue blink)."
+	echo "Can't find a valid deviceID. Make sure the device is in Listening Mode (Blue blink)."
 	exit
 else
 	echo "A device with ID $g was detected."
