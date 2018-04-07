@@ -131,5 +131,5 @@ echo "Done!"
 if [[ "$1" == "monitor" ]] || [[ "$2" == "monitor" ]]; then
   # since your setup file will usually need to display some output, we'll open the serial monitor so you can check it all worked
   sleep 2
-  exec particle serial monitor --follow # On Linux this will probably put the device back into DFU mode unintentionally
+  exec particle serial monitor --follow # On Linux this may put the device back into DFU mode unintentionally
 fi
