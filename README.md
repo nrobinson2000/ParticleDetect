@@ -1,4 +1,7 @@
 # Basic setup script for particle devices
+
+*Forked from https://gist.github.com/jenschr/e5ff966f5d6db91ca4743ac10d6a1c72 by [jenschr](https://github.com/jenschr)*
+
 Works on OSX and should also work for Linux.
 Users of Windows 10 (or higher) can likely use the builtin Ubuntu install.
 
@@ -46,4 +49,4 @@ Written by https://community.particle.io/u/jenschr
 
 #### Use as you like on your own responsibility :-)
 
-**Caveat:** Linux cannot use stty to set the baud rate to 28800 and 14400 like OSX can. custom-baud is a C executable for Linux that can get around this.
+**Caveat:** Linux cannot use stty to set the baud rate to 28800 and 14400 like OSX can. `custom-baud` is a C executable for Linux that can get around this.
