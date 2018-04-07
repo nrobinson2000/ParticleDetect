@@ -12,8 +12,8 @@
 #    "particle serial wifi --port /dev/tty.usbmodem1451 --file defaultwifi.json"
 # 5. Claim the device (make sure you're logged in with the correct user!)
 # 6. Set the device DFU mode, so we can upload firmware
-# 7. Flash our device test & setup firmware via Serial:
-#    particle serial flash setup.bin
+# 7. Flash our device test & setup firmware via USB:
+#    particle flash --usb setup.bin
 #
 # USAGE:
 # ./ParticleDetect.sh            # You will have to will confirm device is in listening mode. Serial monitor will not open.
@@ -30,7 +30,7 @@
 # Thanks to:
 # @rickkas7 for examples in https://github.com/rickkas7/particle-device-helper
 # @jrodas for examples https://community.particle.io/t/firmware-tips-and-tricks/3649/35
-# @nrobinson2000 for improvements to this script
+# @nrobinson2000 for improvements to this script https://github.com/nrobinson2000/ParticleDetect
 # Written by https://community.particle.io/u/jenschr
 #
 # Use as you like on your own responsibility :-)
